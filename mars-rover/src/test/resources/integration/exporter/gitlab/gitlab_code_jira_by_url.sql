@@ -13,3 +13,5 @@ from gitlab_merge_requests mr
          JOIN gitlab_users user on event.author_web_url = user.web_url
 where lower(event.tenantName) like lower(?1)
 and mr.web_url in (?2)
+
+-- End of file
